@@ -1,5 +1,5 @@
 import java.util.*;
-class average 
+class aggregate 
 {
     public static void main(String[] args) {
         try {
