@@ -1,9 +1,12 @@
 import java.util.*;
-class atm
+public class atm
 {
 public static void main(String[] args)
 {
+try {
+        
 Scanner sc= new Scanner(System.in);
+int arr[]={100,200,500,2000};
 System.out.print("Enter the 1st Denomination : ");
 int a= sc.nextInt();
 System.out.print("Enter the 1st Denomination number of notes: ");
@@ -20,7 +23,19 @@ System.out.print("Enter the 4th Denomination: ");
 int d= sc.nextInt();
 System.out.print("Enter the 4th Denomination number of notes: ");
 int d1= sc.nextInt();
-int e=a*a1+b*b1+c*c1+d*d1;
-System.out.println("Total Available Balance in ATM = " +e);
+if(a1==100||b1==500||c1==200||d1==2000)
+{
+    int e=a*a1+b*b1+c*c1+d*d1;
+    System.out.println("Total Available Balance in ATM = " +e);
+}
+else
+{
+      System.out.println("Enter the correct Denomination"); 
+}
+}
+catch(Exception e)
+{
+    System.out.println("Enter the correct Denomination"); 
+    }
 }
 }
